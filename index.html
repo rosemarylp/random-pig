@@ -5,8 +5,30 @@
 	<title>Random Pig Generator</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	
+	<header>
+		<h1>Random Pig</h1>		
+	</header>
+
+	<main>
+		<!-- On click, calls script.js to generate a guinea pig -->
+		<button id="button-create">Create</button>
+
+		<!-- Hidden until first guinea pig is created -->
+		<div id="message-again">
+			<p>Again?</p>
+		</div>
+
+		<!-- Hidden unless an error occurs -->
+		<div id="message-fail">
+			<p>There was an error!  :(</p>
+		</div>
+
+		<section id="container-pig">
+			<!-- Holds generated guinea pig information -->
+		</section>
+	</main>
 </body>
 </html>

@@ -1,0 +1,23 @@
+body {
+  background-color: #AA6939; }
+
+header {
+  color: white;
+  font-size: 2em;
+  text-align: center; }
+
+main {
+  background-color: #97D38D;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2em; }
+  main button {
+    background-color: #1E6912;
+    color: white;
+    font-size: 1.3em;
+    padding: 1.5em 3em; }
+
+div {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */

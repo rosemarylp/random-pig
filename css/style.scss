@@ -1,0 +1,32 @@
+// Variables
+$body-bg: #AA6939; //light brown
+$main-bg: #97D38D; //light green
+$med-green: #1E6912;
+
+body {
+	background-color: $body-bg;
+}
+
+header {
+	color: white;
+	font-size: 2em;
+	text-align: center;
+}
+
+main {
+	background-color: $main-bg;
+	display: flex;
+	flex-flow: column wrap;
+	padding: 2em;
+
+	button {
+		background-color: $med-green;
+		color: white;
+		font-size: 1.3em;
+		padding: 1.5em 3em;
+	}
+}
+
+div {
+	display: none;
+}

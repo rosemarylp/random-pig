@@ -60,7 +60,14 @@ $(document).ready(function() {
 		pig.colors = get_colors();
 		pig.breed = get_breed();
 		console.log(pig);
+		return pig;
 	}
 
-	get_pig();
+	$('#button-create').click(function() {
+		var pig_data = get_pig();
+
+		for (var prop in pig_data) {
+			$('#container-pig').append("<p>" + prop + ": " + pig_data[prop] + "</p>");
+		}
+	});
 });

@@ -52,6 +52,10 @@ $(document).ready(function() {
 		return this_breed;
 	}
 
+	function get_photo() {
+		//get filepath to photo based on breed
+	}
+
 	function get_pig() {
 		var pig = {};
 		pig.name = get_name();
@@ -59,6 +63,7 @@ $(document).ready(function() {
 		pig.age = get_age() + " months";
 		pig.colors = get_colors();
 		pig.breed = get_breed();
+		pig.photo = "images/comet.jpg"; //placeholder
 		console.log(pig);
 		return pig;
 	}
@@ -67,7 +72,12 @@ $(document).ready(function() {
 		var pig_data = get_pig();
 
 		for (var prop in pig_data) {
-			$('#container-pig').append("<p>" + prop + ": " + pig_data[prop] + "</p>");
+			if (prop == "photo") {
+				$('#container-pig').append("<img src=\"" + pig_data[prop] + "\">");
+			} else {
+				$('#container-pig').append("<p>" + prop + ": " + pig_data[prop] + "</p>");
+
+			}
 		}
 	});
 });

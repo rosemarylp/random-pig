@@ -1,8 +1,11 @@
+@import "https://fonts.googleapis.com/css?family=Bubblegum+Sans|Open+Sans";
 body {
-  background-color: #AA6939; }
+  background-color: #AA6939;
+  font-family: "Open Sans"; }
 
 header {
   color: white;
+  font-family: "Bubblegum Sans";
   font-size: 2em;
   text-align: center; }
 
@@ -10,6 +13,8 @@ main {
   background-color: #97D38D;
   display: flex;
   flex-flow: column wrap;
+  margin: 0 auto;
+  max-width: 70%;
   padding: 2em; }
   main button {
     background-color: #1E6912;

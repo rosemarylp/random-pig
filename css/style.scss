@@ -1,14 +1,22 @@
-// Variables
+@import 'https://fonts.googleapis.com/css?family=Bubblegum+Sans|Open+Sans';
+
+// Colors
 $body-bg: #AA6939; //light brown
 $main-bg: #97D38D; //light green
 $med-green: #1E6912;
 
+// Fonts
+$heading: "Bubblegum Sans";
+$paragraph: "Open Sans";
+
 body {
 	background-color: $body-bg;
+	font-family: $paragraph;
 }
 
 header {
 	color: white;
+	font-family: $heading;
 	font-size: 2em;
 	text-align: center;
 }
@@ -17,6 +25,8 @@ main {
 	background-color: $main-bg;
 	display: flex;
 	flex-flow: column wrap;
+	margin: 0 auto;
+	max-width: 70%;
 	padding: 2em;
 
 	button {

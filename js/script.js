@@ -75,7 +75,7 @@ $(document).ready(function() {
 			if (prop == "photo") {
 				$('#container-pig').append("<img src=\"" + pig_data[prop] + "\">");
 			} else {
-				$('#container-pig').append("<p>" + prop + ": " + pig_data[prop] + "</p>");
+				$('#container-pig').append("<div><h2>" + prop + ": </h2><p>" + pig_data[prop] + "</p></div>");
 
 			}
 		}

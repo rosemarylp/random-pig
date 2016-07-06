@@ -19,8 +19,25 @@ main {
   main button {
     background-color: #1E6912;
     color: white;
+    font-family: "Open Sans";
     font-size: 1.3em;
     padding: 1.5em 3em; }
+  main #container-pig {
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%; }
+    main #container-pig div {
+      align-items: center;
+      display: flex;
+      flex-flow: row wrap; }
+    main #container-pig h2 {
+      font-family: "Bubblegum Sans";
+      text-transform: capitalize;
+      flex: 1 10%; }
+    main #container-pig p {
+      flex: 1 10%; }
 
 div {
   display: none; }

@@ -32,8 +32,33 @@ main {
 	button {
 		background-color: $med-green;
 		color: white;
+		font-family: $paragraph;
 		font-size: 1.3em;
 		padding: 1.5em 3em;
+	}
+
+	#container-pig {
+		align-self: center;
+		align-items: center;
+		display: flex;
+		flex-flow: column wrap;
+		width: 80%;
+
+		div {
+			align-items: center;
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		h2 {
+			font-family: $heading;
+			text-transform: capitalize;
+			flex: 1 10%;
+		}
+
+		p {
+			flex: 1 10%;
+		}
 	}
 }
 

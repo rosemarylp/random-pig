@@ -75,8 +75,24 @@ $(document).ready(function() {
 			if (prop == "photo") {
 				$('#container-pig').append("<img src=\"" + pig_data[prop] + "\">");
 			} else {
-				$('#container-pig').append("<div><h2>" + prop + ": </h2><p>" + pig_data[prop] + "</p></div>");
-
+				if (Array.isArray(pig_data[prop]) && pig_data[prop].length > 1) {
+					var output = "<div><h2>" + prop + ": </h2><p>";
+					//Loop through all the values for this property, adding in a comma and space as needed
+					for (var i = 0; i < pig_data[prop].length; i++) {
+						//If this is the last item, no comma
+						if (i == pig_data[prop].length - 1) {
+							output += pig_data[prop][i];						
+						} else {
+							//If this is not the last item, add a comma and space
+							output += pig_data[prop][i] + ", ";						
+						}
+					}
+					output += "</p></div>";
+					$('#container-pig').append(output);
+				} else {
+					//Output the property and value
+					$('#container-pig').append("<div><h2>" + prop + ": </h2><p> " + pig_data[prop] + "</p></div>");
+				}
 			}
 		}
 	});

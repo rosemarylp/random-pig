@@ -29,7 +29,7 @@ $(document).ready(function() {
 	function get_colors() {
 		//Gets number of colors
 		//Returns color combination
-		var all_colors = ["black", "white", "orange", "light brown", "dark brown", "tan", "golden agouti", "silver agouti", "gray"];
+		var all_colors = ["black", "white", "orange", "dark brown", "tan", "golden agouti", "silver agouti", "gray"];
 		var random_number = get_random_number(3, 1);
 		var num_colors = random_number;
 		var colors = [];
@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 	function get_breed() {
 		//Returns random breed
-		var all_breeds = ["American", "Teddy", "Peruvian", "Silkie", "Abyssinian", "Crested", "Silkie", "Texel", "Rex", "Coronet", "Baldwin"];
+		var all_breeds = ["American", "Teddy", "Peruvian", "Silkie", "Abyssinian", "Crested", "Silkie", "Baldwin"];
 		var random_number = get_random_number(all_breeds.length, 0);
 		var this_breed = all_breeds[random_number];
 		return this_breed;
